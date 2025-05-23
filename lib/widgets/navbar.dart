@@ -63,7 +63,9 @@ class _CustomAppBarState extends State<CustomAppBar> {
                   MaterialPageRoute(builder: (_) => const SignUpScreen()),
                 );
               } else if (value == 'login') {
-                Navigator.pushNamed(context, '/login');
+                Navigator.pushReplacementNamed(context, '/login');
+              } else if (value == 'profil') {
+                Navigator.pushReplacementNamed(context, '/profil');
               }
 
               // Tu peux aussi gérer 'profil', 'settings', etc.

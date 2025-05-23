@@ -10,7 +10,7 @@ class SidebarItem {
 
 class SideBar extends StatelessWidget {
   final bool isExpanded;
-  final VoidCallback onToggle;
+  final VoidCallback onToggle  ;
   final String? selectedLabel;
   final Function(String) onItemSelected;
 
@@ -55,7 +55,7 @@ class SideBar extends StatelessWidget {
                   ]),
                   buildSection("NIVEAU 2", [
                     SidebarItem(icon: LucideIcons.camera, label: "Souvenirs"),
-                    SidebarItem(icon: LucideIcons.bookOpen, label: "Lectures"),
+                    SidebarItem(icon: LucideIcons.bookOpen, label: "Media"),
                     SidebarItem(icon: LucideIcons.lightbulb, label: "Idées"),
                     SidebarItem(icon: LucideIcons.database, label: "Admin"),
                     SidebarItem(icon: LucideIcons.fileText, label: "Documents"),
